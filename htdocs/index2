@@ -1,0 +1,69 @@
+<table class="table" border="1">
+<tr><th colspan="10">課程資料</th></tr>
+<th>課程編號</th>
+<th>科目</th>
+<th>科系</th>
+<th>學分</th>
+<th colspan="2"> 功能</th>
+
+
+<?php
+	require "ConnectDB.php";
+	
+	echo"課程查詢平台
+	<br>學號：40743259" ;
+	
+	
+
+	//根據搜尋欄位是否有資料決定把哪一個SQL語法儲存在變數中
+	if(empty($_GET['course_id'])){
+		//搜尋資料表course的所有資料
+		$sql = "SELECT * FROM course;";
+	}
+	else{
+		//搜尋資料表course中course_id符合搜尋條件的資料
+		$course_id = $_GET['course_id'];
+		$sql = "SELECT * FROM course WHERE course_id = '$course_id'";
+	}
+
+	//把$sql這個字串拿去做查詢，並將結果儲存在$result裡
+	$result = $conn ->query($sql);
+
+	//判斷是否有查詢到資料
+	if($result->num_rows>0){
+		//輸出資料，每次呼叫$row = $result->fetch_assoc()都會取出一列的資料
+		while($row=$result->fetch_assoc()){
+			//用$row["欄位名稱"]來取得資料
+			echo "
+			<tr>
+			<td>".$row["course_id"]."</td>
+			<td>".$row["title"]."</td>
+			<td>".$row["dept_name"]."</td>
+			<td>".$row["credits"]."</td>
+			<td><a href='EditCoursePage.php?id=".$row["course_id"]."'>修改</a></td>
+			<td><a href='DeleteCourse.php?id=".$row["course_id"]."'>刪除</a></td>
+			</tr>";
+
+			/*echo "課程編號:".$row["course_id"]."科目:".$row["title"].
+				"科系".$row["dept_name"]."學分:".$row["credits"]."<br>";*/
+		}
+	}else{
+		echo "0 results";
+	}
+	//關閉與資料庫的連線
+	$conn->close();
+	
+?>
+<!-- 搜尋特定的課程編號 -->
+	<form id="form1" name="form1" method="get" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?> ">
+		<p>課程編號查詢：
+			<input type="text" name="course_id" id="course_id">
+		</p>
+		<p>
+			<input type="submit" value="搜尋">
+		</p>
+	</form>
+
+<input type="button" value="新增資料" onclick="location.href='AddCoursePage.php'">
+
+
