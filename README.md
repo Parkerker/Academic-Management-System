@@ -2,7 +2,7 @@
 ## MariaDB資料庫練習與使用
 
 # 學舍管理系統 實作DEMO(近期更新 增加美觀)：https://youtu.be/gWcCpfMJ_AA
-# 學舍管理系統 實作DEMO(舊)：https://youtu.be/AjfJ2W9JJpY
+## 學舍管理系統 實作DEMO(舊)：https://youtu.be/AjfJ2W9JJpY
 ## 👇👇 展示部分頁面 👇👇
 
 
