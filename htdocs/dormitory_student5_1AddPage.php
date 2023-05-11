@@ -1,9 +1,12 @@
+<link href="styles/AddPage5_1style.css" rel="stylesheet" type="text/css">
 <h3><p><a style="font-size: 22px;" href='index.php?"'>學舍管理平台首頁</a></p>
 <!DOCTYPE html>
+<link href="styles/AddPage5_1style.css" rel="stylesheet" type="text/css">
     <form action="dormitory_student5_1Add.php" method="post">
     <label>學生帳號註冊</label>    
     </br>
     </br>
+    <body>
     <label>學號：</label>
     </br>
     <input type="text" id="ID" name="ID">
@@ -22,5 +25,6 @@
     </br>
     </br>
     <input type="submit" value="送出" />
+    </body>
     </form>
 </html>

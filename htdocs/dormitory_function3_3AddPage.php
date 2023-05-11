@@ -1,3 +1,4 @@
+<link href="styles/AddPage5_1style.css" rel="stylesheet" type="text/css">
 <!DOCTYPE html>
     <form action="dormitory_function3_3Add.php" method="post">
     <label>學號：40743259</label>    

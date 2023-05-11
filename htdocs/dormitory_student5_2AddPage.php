@@ -1,3 +1,4 @@
+<link href="styles/AddPage5_1style.css" rel="stylesheet" type="text/css">
 <h3><p><a style="font-size: 22px;" href='dormitory_function3.php?"'>登入後學生功能</a></p>
 <!DOCTYPE html>
     <form action="dormitory_student5_2Add.php" method="post">

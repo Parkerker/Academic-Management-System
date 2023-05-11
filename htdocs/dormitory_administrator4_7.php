@@ -1,3 +1,4 @@
+<link href="styles/AddPage5_1style.css" rel="stylesheet" type="text/css">
 <h3><p><a style="font-size: 22px;" href='dormitory_administrator4.php?"'>登入後管理員</a></p>
 <h3><table class="table" border="1">
 <tr><th colspan="10">設備清單</th></tr>

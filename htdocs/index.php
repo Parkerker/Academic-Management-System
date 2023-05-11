@@ -6,8 +6,11 @@
 <th>房間編號</th>
 <th>密碼</th>
 <th colspan="2"> 功能</th>-->
-<h3><p><a style="font-size: 22px;" href='index.php?"'>學舍管理平台首頁</a></p>
+<section id="zo2-zt-logo-wrap" class=""><div class="container"><div class="row"> <div id="zo2-header-logo" class="col-md-6 col-sm-4 col-lg-6 col-xs-12"> <header id="standard-logo" class="zo2-logo"> <a class="standard-logo-link" href="index.php?" title="學舍管理平台首頁"> <img class="titleimg" alt="學舍管理平台首頁" src="/img/homelogo.png" /> </a> </header>
 
+<!--<h3><p><a style="font-size: 22px;" href='index.php?'>學舍管理平台首頁</a></p>-->
+<!--<script src="scripts/firstjc.js"></script>  -->
+<link href="styles/style.css" rel="stylesheet" type="text/css">
 <?php
 	require "ConnectDB.php";
 	
@@ -56,6 +59,7 @@
 		echo "0 results";
 	}*/
 	//關閉與資料庫的連線
+	
 	$conn->close();
 	
 ?>
@@ -63,12 +67,15 @@
 
 <div >
             <marquee height="50" style="color:#000000; font-size: 30px;">🏡~~歡迎使用學舍管理系統~~🏡</marquee>
+			
 </div>
 
 <h1><strong><span>公告</span></strong></h1>
 
 <h3>
 <span><strong><br></strong></span><strong>
+
+
 <img src="https://house.nfu.edu.tw/images/new.gif"/>
 <span>帳號用戶需自行將儲存空間（雲端硬碟、google信箱和google相簿等）調整至3GB（含）以下</span>
 
@@ -95,12 +102,11 @@
                             </div>
 
         </div>
-
 <!-- 搜尋特定的課程編號 -->
 	<form id="form1" name="form1" method="get" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?> ">
 
 <!--1.基本功能-->
-<p><a style="font-size: 30px;">基本功能</a></p> 
+<p><a class="title1">基本功能</a></p> 
 <!-- href='dormitory_home1.php?" -->
 			<p><a href='dormitory_student5_1AddPage.php?"'>學生註冊帳戶</a></p>
 			<!-- <p><a href='dormitory_landlord6_1AddPage.php?"'>房東註冊帳戶</a></p> -->
@@ -117,9 +123,9 @@
 			<p><a href='dormitory_nearby2_2.php?"'>房屋列表</a></p>
 			<p><a href='dormitory_nearby2_3.php?"'>房屋類型查詢</a></p> -->
 <br>
-<p><a style="font-size: 30px;">登入後功能</a></p> 
+<p><a class="title1">登入後功能</a></p> 
 <!--3.登入後學生功能-->
-<p><a style="font-size: 30px;" href='dormitory_function3.php?"'>登入後學生功能</a></p>
+<p><a  href='dormitory_function3.php?"'>登入後學生功能</a></p>
 			<!-- <p><a href='dormitory_student5_4.php?"'>修改帳戶資訊</a></p>
 			<p><a href='dormitory_function3_1.php?"'>簽到查詢</a></p>
 			<p><a href='dormitory_function3_2.php?"'>房間資訊與繳租情況</a></p>
@@ -130,7 +136,8 @@
 			<!-- <p><a href='dormitory_function3_5.php?"'>租約到期時間</a></p> -->
 
 <!--4.登入後 管理員-->
-<p><a style="font-size: 30px;" href='dormitory_administrator4.php?"'>登入後 管理員</a></p>
+<p><a  href='dormitory_administrator4.php?"'>登入後 管理員</a></p>
+
 			<!-- <p><a href='dormitory_administrator4_1.php?"'>查看房東及學生的註冊訊息</a></p>
 			<p><a href='dormitory_administrator4_5.php?"'>查看學生報修的物品</a></p>
 			<p><a href='dormitory_administrator4_3.php?"'>學生簽到審核修改刪除</a></p> -->
@@ -154,5 +161,6 @@
 			
 			<!-- <p><a href='dormitory_landlord6_2.php?"'>申請或修改房屋資訊</a></p>
 			<p><a href='dormitory_landlord6_3.php?"'>查詢繳租情況</a></p> -->
+			
 	
 	</form>

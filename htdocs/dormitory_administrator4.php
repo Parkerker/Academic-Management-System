@@ -1,3 +1,4 @@
+<link href="styles/AddPage5_1style.css" rel="stylesheet" type="text/css">
 <h3><p><a style="font-size: 22px;" href='index.php?"'>學舍管理平台首頁</a></p>
 </br>
 <!--4.登入後 管理員-->

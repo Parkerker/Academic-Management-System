@@ -1,3 +1,4 @@
+<link href="styles/AddPage5_1style.css" rel="stylesheet" type="text/css">
 <h3><p><a style="font-size: 22px;" href='dormitory_administrator4.php?"'>登入後 管理員</a></p>
 <h3><table class="table" border="1">
 <tr><th colspan="10">簽到記錄</th></tr>

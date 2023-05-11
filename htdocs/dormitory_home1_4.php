@@ -1,4 +1,5 @@
 <h3>
+<link href="styles/AddPage5_1style.css" rel="stylesheet" type="text/css">
 <p><a style="font-size: 22px;" href='index.php?"'>學舍管理平台首頁</a></p>	
 <h1><strong><span>問題與回答</span></strong></h1>
 
